@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.logo img {
+    width: 100px; /* Adjust the size of the logo as needed */
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+}
+
+.navigation li {
+    margin-left: 20px;
+}
+
+.navigation li:first-child {
+    margin-left: 0;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .navigation {
+        display: none; /* Hide the navigation buttons on small screens */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show the hamburger menu on small screens */
+    }
+
+    /* Styling the hamburger menu icon */
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    /* Adjust header text on small screens */
+    header {
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        width: 60px; /* Adjust the logo size for small screens */
+    }
+
+    .navigation li {
+        margin: 0 5px; /* Reduce the margin between navigation links */
+    }
+}
+
+
+/* CSS for the container */
+.container {
+    display: flex;
+    height: 100vh; /* Set the container's height to 100% of the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling when the content overflows */
+}
+
+
+/* CSS for the content */
+.content {
+    display: flex;
+    flex-direction: column; /* Set the content to stack horizontally */
+    flex: 1; /* Allow the content to grow and occupy the remaining space */
+}
+
+/* CSS for div elements */
+.box {
+    flex: 1;
+    height: 400px;
+    max-width: auto;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+}
